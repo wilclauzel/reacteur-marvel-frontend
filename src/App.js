@@ -20,6 +20,7 @@ import Character from "./containers/Character";
 import Header from "./components/Global/Header";
 import Footer from "./components/Global/Footer";
 
+/* Init Font */
 library.add(faGreaterThan, faLessThan, faStar);
 
 function App() {
