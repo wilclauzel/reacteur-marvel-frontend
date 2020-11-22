@@ -1,0 +1,14 @@
+.comiclist {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1700px) {
+  .comiclist {
+    max-width: 100%;
+  }
+}

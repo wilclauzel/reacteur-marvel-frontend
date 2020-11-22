@@ -1,0 +1,42 @@
+.paging {
+  width: 550px;
+  margin: 20px 0;
+  height: 55px;
+  background-color: rgb(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+}
+.paging > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-informative,
+.page {
+  height: 55px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+.page:hover {
+  background-color: red;
+}
+.selected {
+  border: 2px solid red;
+  background-color: red;
+  font-weight: 900;
+}
+
+@media (max-width: 600px) {
+  .paging {
+    width: 500px;
+  }
+
+  .page-informative,
+  .page {
+    width: 40px;
+  }
+}

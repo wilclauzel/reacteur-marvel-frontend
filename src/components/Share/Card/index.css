@@ -1,0 +1,78 @@
+.dataCard {
+  margin: 20px;
+  width: 17vw;
+}
+.dataCard-image {
+  position: relative;
+}
+.dataCard-image-maxsize {
+  height: 320px;
+}
+.dataCard-image-minsize {
+  height: 260px;
+}
+.dataCard-portrait-maxsize {
+  height: 420px;
+}
+.dataCard-portrait-minsize {
+  height: 360px;
+}
+.dataCard-info {
+  color: white;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.dataCard-info-maxsize {
+  height: 140px;
+}
+.dataCard-info-minsize {
+  height: 80px;
+}
+.dataCard-info h4 {
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 13.3px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.dataCard-info-bloc {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.dataCard-info p {
+  font-size: 12px;
+  line-height: 11.3px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .dataCard-image-maxsize {
+    height: 320px;
+  }
+  .dataCard-image-minsize {
+    height: 160px;
+  }
+  .dataCard-portrait-maxsize {
+    height: 420px;
+  }
+  .dataCard-portrait-minsize {
+    height: 260px;
+  }
+  .dataCard-info-maxsize {
+    height: 240px;
+  }
+  .dataCard-info-minsize {
+    height: 80px;
+  }
+}
+@media (max-width: 1400px) {
+}

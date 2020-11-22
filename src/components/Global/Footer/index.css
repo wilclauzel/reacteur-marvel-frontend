@@ -1,0 +1,19 @@
+footer {
+  width: 100vw;
+  height: 120px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 16px;
+  line-height: 14px;
+  font-weight: lighter;
+}
+footer p {
+  color: grey;
+}
+footer strong {
+  color: white;
+  font-weight: 700;
+}

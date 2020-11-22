@@ -1,0 +1,24 @@
+.favourites {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: transparent;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.favourites h1 {
+  color: white;
+  margin-top: 40px;
+  font-size: 50px;
+  line-height: 41.7px;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (max-width: 1700px) {
+  .favourites {
+    max-width: 100%;
+  }
+}

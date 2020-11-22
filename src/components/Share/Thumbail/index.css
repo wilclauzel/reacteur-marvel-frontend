@@ -1,0 +1,27 @@
+.thumbail {
+  width: 150px;
+  height: 230px;
+  flex-shrink: 0;
+}
+.thumbail:nth-child(even) {
+  margin: 0 20px;
+}
+.thumbail > div {
+  width: 150px;
+  height: 130px;
+  object-fit: cover;
+  position: relative;
+}
+.thumbail h4 {
+  width: 150px;
+  height: 100px;
+  background-color: black;
+  color: white;
+  font-family: Times, serif;
+  font-size: 12px;
+  line-height: 13.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,34 @@
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.image div {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+.image-normal-star {
+  font-size: 25px;
+  color: rgb(211, 204, 204);
+}
+.image-favorite-star {
+  font-size: 25px;
+  color: red;
+}

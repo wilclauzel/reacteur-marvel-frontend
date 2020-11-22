@@ -1,0 +1,128 @@
+.slip {
+  max-width: 90%;
+  height: 70vh;
+  min-height: 75vh;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slip > div {
+  width: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slip > div:first-child img {
+  width: 35vw;
+  height: 35vw;
+  object-fit: cover;
+}
+.slip > div:last-child {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.slip > div:last-child > div {
+  width: 40vw;
+  min-height: 17.5vw;
+}
+.slip > div:last-child h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 50px;
+  line-height: 41.7px;
+  font-weight: 400;
+}
+.slip > div:last-child h3 {
+  font-size: 20px;
+  line-height: 16.7px;
+  font-weight: 100;
+}
+.slip > div:last-child p {
+  font-size: 16px;
+  line-height: 13.3px;
+}
+.slip > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.slip-cards {
+  margin-top: 20px;
+  display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+.slip-cards::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.slip-cards::-webkit-scrollbar:horizontal {
+  height: 11px;
+}
+.slip-cards::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 150px;
+}
+.slip-card:nth-child(even) {
+  margin: 0 20px;
+}
+
+@media (max-width: 1200px) {
+  .slip {
+    max-width: 100%;
+  }
+  .slip > div:last-child > div {
+    width: 45vw;
+  }
+  .slip > div:last-child h2 {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 31.7px;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slip {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .slip > div {
+    width: 70vw;
+  }
+  .slip > div:first-child img {
+    width: 70vw;
+    height: 55vw;
+    object-fit: cover;
+  }
+  .slip > div:last-child > div {
+    width: 70vw;
+    min-height: 17.5vw;
+  }
+  .slip > div:last-child h2 {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .slip > div {
+    width: 90vw;
+  }
+  .slip > div:first-child img {
+    width: 90vw;
+  }
+  .slip > div:last-child > div {
+    width: 90vw;
+    min-height: 17.5vw;
+  }
+}
