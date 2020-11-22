@@ -19,7 +19,7 @@ const handleLoadDatas = async (favorites, setDatas, routeName) => {
       const id = favs[i];
       if (id) {
         const response = await axios.get(
-          `http://localhost:3001/${routeName}/${id}`
+          `https://git.heroku.com/reacteur-marvel.git/${routeName}/${id}`
         );
         if (Number(response.data.count) === 1) {
           datas.push(response.data.results[0]);

@@ -25,7 +25,9 @@ const handleGetComics = async (
         ? `&offset=${(Number(requestedPage) * 100).toFixed(0)}`
         : "";
     params += searchCriteria ? `&titleStartsWith=${searchCriteria}` : "";
-    const response = await axios.get("http://localhost:3001/comics" + params);
+    const response = await axios.get(
+      "https://git.heroku.com/reacteur-marvel.git/comics" + params
+    );
     setCurrentPage(
       Number(response.data.offset) > 1
         ? Math.ceil(response.data.offset / 100)

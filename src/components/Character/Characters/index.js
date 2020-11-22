@@ -27,7 +27,7 @@ const handleGetCharacters = async (
         : "";
     params += searchCriteria ? `&nameStartsWith=${searchCriteria}` : "";
     const response = await axios.get(
-      "http://localhost:3001/characters" + params
+      "https://git.heroku.com/reacteur-marvel.git/characters" + params
     );
     setCurrentPage(
       Number(response.data.offset) > 1
