@@ -12,7 +12,7 @@ import "./index.css";
 const handleGetData = async (id, setIsLoading, setCharacterComics) => {
   try {
     const response = await axios.get(
-      `https://git.heroku.com/reacteur-marvel.git/characters/${id}/comics?limit=100&orderBy=title`
+      `https://reacteur-marvel.herokuapp.com/characters/${id}/comics?limit=100&orderBy=title`
     );
     setCharacterComics(response.data.results);
     setIsLoading(false);

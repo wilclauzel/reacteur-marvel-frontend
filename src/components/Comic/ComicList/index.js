@@ -26,7 +26,7 @@ const handleGetComics = async (
         : "";
     params += searchCriteria ? `&titleStartsWith=${searchCriteria}` : "";
     const response = await axios.get(
-      "https://git.heroku.com/reacteur-marvel.git/comics" + params
+      "https://reacteur-marvel.herokuapp.com/comics" + params
     );
     setCurrentPage(
       Number(response.data.offset) > 1
