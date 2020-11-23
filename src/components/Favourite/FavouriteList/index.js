@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { getBackUrl } from "../../../Utils/Env";
 import Loading from "../../Share/Loading";
 import {
   getFavoritesCharacters,
@@ -18,9 +19,7 @@ const handleLoadDatas = async (favorites, setDatas, routeName) => {
     for (let i = 0; i < favs.length; i++) {
       const id = favs[i];
       if (id) {
-        const response = await axios.get(
-          `https://reacteur-marvel.herokuapp.com/${routeName}/${id}`
-        );
+        const response = await axios.get(`${getBackUrl()}${routeName}/${id}`);
         if (Number(response.data.count) === 1) {
           datas.push(response.data.results[0]);
         }

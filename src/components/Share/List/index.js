@@ -28,9 +28,8 @@ const List = ({
           <div
             className={gridDisplay ? "list-grid-display" : "list-bar-display "}
           >
-            {/* TODO remettre la bonne key  */}
             {cardDatas &&
-              cardDatas.map((item, index) => {
+              cardDatas.map((item) => {
                 const linkData = {
                   pathname: cardRoute,
                   state: {
@@ -41,7 +40,7 @@ const List = ({
                   },
                 };
                 return (
-                  <div key={index}>
+                  <div key={item.id}>
                     <Card
                       id={item.id}
                       title={item[cardLabelName]}

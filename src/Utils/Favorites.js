@@ -21,7 +21,9 @@ export const updateFavoritesCharacters = (id, value) => {
 const updateFavorites = (name, id, value) => {
   let favorites = getFavorites(name);
   if (value) {
-    favorites += favorites ? `,${id}` : `${id}`;
+    if (favorites.search(id) < 0) {
+      favorites += favorites ? `,${id}` : `${id}`;
+    }
   } else {
     const pos = favorites.search(id);
     if (pos >= 0) {

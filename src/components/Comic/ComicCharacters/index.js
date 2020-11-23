@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
+import { getBackUrl } from "../../../Utils/Env";
 import Slip from "../../Share/Slip";
 import {
   getFavoritesCharacters,
@@ -12,7 +13,7 @@ import "./index.css";
 const handleGetData = async (id, setIsLoading, setComicCharacters) => {
   try {
     const response = await axios.get(
-      `https://reacteur-marvel.herokuapp.com/comics/${id}/characters?limit=100&orderBy=name`
+      getBackUrl() + `comics/${id}/characters?limit=100&orderBy=name`
     );
     setComicCharacters(response.data.results);
     setIsLoading(false);

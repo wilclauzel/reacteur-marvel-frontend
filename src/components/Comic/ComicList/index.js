@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { getBackUrl } from "../../../Utils/Env";
 import List from "../../Share/List";
 import Loading from "../../Share/Loading";
 import Paging from "../../Share/Paging";
@@ -25,9 +26,7 @@ const handleGetComics = async (
         ? `&offset=${(Number(requestedPage) * 100).toFixed(0)}`
         : "";
     params += searchCriteria ? `&titleStartsWith=${searchCriteria}` : "";
-    const response = await axios.get(
-      "https://reacteur-marvel.herokuapp.com/comics" + params
-    );
+    const response = await axios.get(getBackUrl() + "comics" + params);
     setCurrentPage(
       Number(response.data.offset) > 1
         ? Math.ceil(response.data.offset / 100)
