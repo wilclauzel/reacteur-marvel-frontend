@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Marvel frontend - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">
+<br>
+<img
+		width="450"
+		alt="Marvel - React App"
+		src="Marvel-Comics-Logo.575beca3.png">
 
-## Available Scripts
+<br>
+<br>
+An application to consult Marvel comics and characters datas
+<br>
+<br>
 
-In the project directory, you can run:
+</h1>
 
-### `yarn start`
+## General info
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This project, carried out as part of the Le Reacteur training, aims to put into practice our knowledge in React on the frontend part.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The Marvel project is composed of 2 parts the backend and the frontend (application treated here).
+The latter is the website for consult Marvel comics and characters.
 
-### `yarn test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This application allows you to discover the characters and comics of the Marvel universe and to indicate and then consult your favorites.
 
-### `yarn build`
+The screens of the characters and comics follow the same design and have the same functionalities :
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Display by list of 100 with pagination management
+- Search by name or title
+- Indicate your favorite characters or comics
+- Access to the detail of a character or comic strip
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+By default, the application presents the characters.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Favorites are stored in a cookie.
 
-### `yarn eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- axios - version 0.21.0
+- React.js - version 17.0.1
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+And the components :
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- js-cookie - version 2.2.1
+- react-loader-spinner - version 3.1.14
+- react-router-dom - version 5.2.0
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Setup
 
-## Learn More
+Clone the repository then install the dependencies using `yarn`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Make sure nothing is running on your port 3000.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Use `yarn start` to launch the website.
 
-### Code Splitting
+You can also visit the demo website :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+https://kind-saha-974cc4.netlify.app/
 
-### Analyzing the Bundle Size
+## Status
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Project is _finished_.
 
-### Making a Progressive Web App
+## Cautionary note
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project was carried out in a limited time with predefined guidelines. Also, this project may contain improvement points to comply with good practices.
 
-### Advanced Configuration
+## Inspiration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[official marvel website](https://www.marvel.com/).
